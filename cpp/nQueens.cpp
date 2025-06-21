@@ -46,12 +46,6 @@ int main(){
     vector<string> board(n,string(n,'.'));
     vector<vector<string>> ans;
     nQueens(board,ans,n,0);
-    cout<<"Possible solutions"<<endl;
-    for(int i = 0;i<n;i++){
-        for(int j=0;j<n;j++){
-            cout<<ans[i][j]<<" ";
-            cout<<endl;
-        }
-        cout<<"Next possible solution"<<endl;
+    cout<<"No. of Possible solutions"<<ans.size()<<endl;
+    return 0;
     }
-}
